@@ -1,0 +1,45 @@
+{
+  "name": "jd_match_game",
+  "version": "1.0.0",
+  "description": "Match Game by John Daniel",
+  "main": "src/server/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**/*.js",
+    "watch": "esw --watch src/**/*.js",
+    "start": "node ./src/server/main.js",
+    "serve": "concurrently --kill-others \"npm run start\" \"npm run watch\""
+  },
+  "watch": {
+    "lint": "src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JD914/Match_Game1.git"
+  },
+  "keywords": [
+    "match",
+    "game"
+  ],
+  "author": "John Daniel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JD914/Match_Game1/issues"
+  },
+  "homepage": "https://github.com/JD914/Match_Game1#readme",
+  "devDependencies": {
+    "@types/express": "^4.11.0",
+    "@types/open": "0.0.29",
+    "concurrently": "^3.5.1",
+    "eslint": "^4.15.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-watch": "^3.1.3",
+    "express": "^4.16.2",
+    "npm-watch": "^0.3.0",
+    "open": "0.0.5"
+  }
+}
